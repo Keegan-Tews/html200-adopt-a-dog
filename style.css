@@ -125,6 +125,7 @@ nav{
 
 
 .artical-container{
+    display: inline-block;
     max-width: 70%;
     margin-left: 20rem;
     margin-right: 10em;
@@ -135,6 +136,7 @@ nav{
 .boy{
     width: 45%;
     float: left;
+    padding-top: 2.5rem;
     padding-right: 4rem;
 }
 
