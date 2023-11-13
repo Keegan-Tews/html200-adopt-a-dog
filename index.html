@@ -21,7 +21,7 @@
     <div class="header-container">
       <div class="cart-container">
         <img class="cart-icon" src="images/cart-icon.svg" alt="shopping cart icon">
-        <p class="right">total</p>
+        <p class="right total-cart" data-total="0">total</p>
         <button class="cart-button" onclick="window.location.href = 'checkout.html';">Checkout</button>
       </div>
       <div class="row top">
@@ -72,7 +72,7 @@
     <div class="grid row">
       <div class="square">
 
-        <img class="dog-pic" src="images/murphy-card.jpg" alt="dog">
+        <img onclick="dogImg(this)" data-breed="Pitbull" data-name="Murphy" data-fee="123.45" class="dog-pic" id="pic1" src="images/murphy-card.jpg" alt="dog">
         <div class="grid-content">
 
         <h3>Murphy</h3>
@@ -87,13 +87,13 @@
         </div>
 
         <div class="grid-info">
-          <button onclick="window.location.href = 'checkout.html';">Adopt</button>
+          <button onclick="runningTotal(this)" data-fee="123.45">Adopt</button>
         </div>
       </div>
 
       <div class="square">
 
-        <img class="dog-pic" src="images/poppy-card.jpg" alt="dog">
+        <img onclick="dogImg(this)" data-name="Poppy" data-breed="shihtzu" data-fee="123.45" class="dog-pic" id="poppy" src="images/poppy-card.jpg" alt="dog">
         <div class="grid-content">
 
         <h3>Poppy</h3>
@@ -108,12 +108,12 @@
         </div>
 
         <div class="grid-info">
-          <button onclick="window.location.href = 'checkout.html';">Adopt</button>
+          <button onclick="runningTotal(this)" data-fee="123.45">Adopt</button>
         </div>
       </div>
       <div class="square">
 
-        <img class="dog-pic" src="images/jack-card.jpg" alt="dog">
+        <img onclick="dogImg(this)" data-name="Jack" data-breed="Beagle" data-fee="123.45" class="dog-pic" src="images/jack-card.jpg" alt="dog">
         <div class="grid-content">
 
         <h3>Jack</h3>
@@ -128,12 +128,12 @@
         </div>
 
         <div class="grid-info">
-          <button onclick="window.location.href = 'checkout.html';">Adopt</button>
+          <button onclick="runningTotal(this)" data-fee="123.45">Adopt</button>
         </div>
       </div>
       <div class="square">
 
-        <img class="dog-pic" src="images/duffy-card.jpg" alt="dog">
+        <img onclick="dogImg(this)" data-name="Duffy" data-breed="Pitbull" data-fee="123.45" class="dog-pic" src="images/duffy-card.jpg" alt="dog">
         <div class="grid-content">
 
         <h3>Duffy</h3>
@@ -148,12 +148,12 @@
         </div>
 
         <div class="grid-info">
-          <button onclick="window.location.href = 'checkout.html';">Adopt</button>
+          <button onclick="runningTotal(this)" data-fee="123.45">Adopt</button>
         </div>
       </div>
       <div class="square">
 
-        <img class="dog-pic" src="images/lucas-card.jpg" alt="dog">
+        <img onclick="dogImg(this)" data-name="Lucas" data-breed="German shephered" data-fee="123.45" class="dog-pic" src="images/lucas-card.jpg" alt="dog">
         <div class="grid-content">
 
         <h3>Lucas</h3>
@@ -168,12 +168,12 @@
         </div>
 
         <div class="grid-info">
-          <button onclick="window.location.href = 'checkout.html';">Adopt</button>
+          <button onclick="runningTotal(this)" data-fee="123.45">Adopt</button>
         </div>
       </div>
       <div class="square">
 
-        <img class="dog-pic" src="images/jake-card.jpg" alt="dog">
+        <img onclick="dogImg(this)" data-name="Jake" data-breed="Lab" data-fee="123.45" class="dog-pic" src="images/jake-card.jpg" alt="dog">
         <div class="grid-content">
 
         <h3>Jake</h3>
@@ -188,12 +188,12 @@
         </div>
 
         <div class="grid-info">
-          <button onclick="window.location.href = 'checkout.html';">Adopt</button>
+          <button onclick="runningTotal(this)" data-fee="123.45">Adopt</button>
         </div>
       </div>
       <div class="square">
 
-        <img class="dog-pic" src="images/angus-card.jpg" alt="dog">
+        <img onclick="dogImg(this)" data-name="Angus" data-breed="Boxer" data-fee="123.45" class="dog-pic" src="images/angus-card.jpg" alt="dog">
         <div class="grid-content">
 
         <h3>Angus</h3>
@@ -208,12 +208,12 @@
         </div>
 
         <div class="grid-info">
-          <button onclick="window.location.href = 'checkout.html';">Adopt</button>
+          <button onclick="runningTotal(this)" data-fee="123.45">Adopt</button>
         </div>
       </div>
       <div class="square">
 
-        <img class="dog-pic" src="images/violet-card.jpg" alt="dog">
+        <img onclick="dogImg(this)" data-name="Violet" data-breed="Chocolate Lab" data-fee="123.45" class="dog-pic" src="images/violet-card.jpg" alt="dog">
         <div class="grid-content">
 
         <h3>Violet</h3>
@@ -228,7 +228,7 @@
         </div>
 
         <div class="grid-info">
-          <button onclick="window.location.href = 'checkout.html';">Adopt</button>
+          <button onclick="runningTotal(this)" data-fee="123.45">Adopt</button>
         </div>
       </div>
       
@@ -270,6 +270,6 @@
       </div>
     </footer>
   </main>
-
+  <script src="./index.js" charset="utf-8"></script>
 </body>
 </html>
