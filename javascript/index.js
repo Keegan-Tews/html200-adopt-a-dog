@@ -60,6 +60,8 @@ function runningTotal(t) {
 
 
 
+
+
 /*/ Get all the dog photo elements
 const dogPhotos = document.querySelectorAll('.dog-pic');
 
