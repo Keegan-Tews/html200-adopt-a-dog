@@ -59,10 +59,10 @@
       <h2 class="blue">Checkout</h2>
 
           
-          <form action="adoptionform.php" method="get">
+          <form id="form">
             <div class="input-group">
-            <label for="flname">Name</label>
-            <input type="text" id="flname" name="flname">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
             </div>
 
             <div class="input-group">
@@ -76,11 +76,11 @@
             </div>
 
             <div class="input-group">
-            <div class="city-c input-container">
+            <div class="city input-container">
               <label for="city">City</label>
               <input type="text" id="city" name="city">
             </div>
-            <div class="state-c input-container">
+            <div class="state input-container">
             <label>State</label>
             <select name="state">
               <option value="AL">Alabama</option>
@@ -136,7 +136,7 @@
               <option value="WY">Wyoming</option>
             </select>
           </div>
-          <div class="zip-c input-container">
+          <div class="zip input-container">
             <label for="zip">Zip Code</label>
             <input type="text" id="zip" name="zip">
           </div>
@@ -238,7 +238,7 @@
           </form>
           
     </div>
-
+  </main>
     <footer>
      
       <div class="foot-container">
@@ -267,7 +267,7 @@
         </p>
       </div>
     </footer>
-  </main>
-<script src="./index.js" charset="utf-8"></script>
+ 
+<script src="javascript/checkout.js" charset="utf-8"></script>
 </body>
 </html>

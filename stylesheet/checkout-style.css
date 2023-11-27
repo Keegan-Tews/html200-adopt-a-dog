@@ -262,11 +262,11 @@ legend{
     padding-bottom: 3rem;
 }
 
-.city-c{
+.city{
     width: 40%;    
 }
 
-.state-c{
+.state{
     width: 25%;
 }
 
@@ -275,7 +275,7 @@ legend{
     width: 100%;
 }
 
-.zip-c{
+.zip{
     width: 30%;
 }
 
