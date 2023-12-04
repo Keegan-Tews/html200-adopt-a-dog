@@ -974,3 +974,132 @@ article.row{
     }
     
 }
+
+
+@media screen and (min-width: 1201px) {
+
+    header{
+        background-image: url(../images/header-images/header-large.jpg);
+        background-size: cover;
+        padding-top: 1rem;
+    }
+
+    .row{
+        width: 100%;
+        margin-left: 1rem;
+        margin-right: 0;
+    }
+
+    .header-container{
+        width: 100%; 
+    }
+    
+    .top{
+        width: 80%;
+        min-height: 0;
+    }
+    
+    .cart-container{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .cart-icon{
+        width: 3.75%;
+        position: relative;
+        top: 0.5rem;
+        left: 5rem;
+    }
+    
+    .right{
+        font-size: 1.75rem;
+        margin: 1rem 0.5rem 0rem 0.5rem;
+        position: relative;
+        left: 6rem;
+    }
+    
+    .cart-button{
+        font-size: 1rem;
+        padding: 0.35rem 1.5rem;
+        top: 2.75rem;
+        right: 1rem;
+    }
+    
+    .logo-container{
+        position: relative;
+        left: 0rem;
+    }
+    
+    .logo{
+        width: 80%;
+        display: inline;
+    }
+
+    .seattle{
+        font-size: 1.95rem;
+    }
+
+    /* end of header start of main*/
+    
+
+    .grid{
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 2rem;
+    }
+
+    .main-container{
+        width: 100%;
+        margin-left: 1rem;
+    }
+
+    .main-content{
+        width: 90%;
+        margin-right: 2.5rem;
+    }
+
+    .text-container{
+        width: 100%;
+    }
+
+    .see-container{
+        width: 65%;
+        display: flex;
+        justify-content: center;
+        margin-left: 1rem;
+        margin-bottom: 8rem;
+    }
+    
+    .see-more-button{
+        font-size: 1.5rem;
+        padding: 0.6rem 1.25rem 0.6rem 1
+    
+}
+    
+        .flogo{
+            width: 45%;
+            padding-top: 4%;
+        }
+        
+        .nav-containerf{
+            width: 100%; 
+            padding: 0;
+        }
+    
+        .nav-listf{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            list-style-type: none;
+            font-size: 1.25rem;
+            padding: 0;
+        }
+    
+        footer p{
+            font-size: 1.5rem;
+            display: flex;
+    
+        }
+        
+    }

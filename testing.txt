@@ -1,0 +1,260 @@
+Intro to Testing:
+
+The website was built in Firefox. As such that is Adopt A Dogs most stable browser. It was built using the graceful degradation method, utilizing media queries and min-max pixel measurements. The site was first built for screen 1200px and up. This website was based on a pdf mockup image. As both I and the website progressed it began to take shape and resemble the provided mockup pdf.
+
+
+Testing:
+
+System - Laptop:
+Operating system - Windows 11:
+
+	Media Queries:
+		Small mobile screen size: 0px min - 480px max
+		Large mobile screen size: 481px min - 768px max
+		Tablet screen size: 769px min - 1024px max
+		Desktop screen size: 1025px min - 1200px max
+		Desktop Large screen size: 1201px min - 100% max - Added.
+
+	Firefox: 
+		Checked each link, button, hover state, and clickable to ensure functionality.
+
+		Checked each media query set to ensure smooth and responsive transitioning between larger screens to smaller and back.
+		
+
+	Chrome: 
+		Checked each link, button, hover state, and clickable to ensure functionality.
+
+		On the home screen when the checkout link is pressed an alert saying $NaN that must be acknowledged before the checkout page loads. The way the total is 		tracked and handled is the cause of the alert. Unliked with Firefox which bypasses this alert, chrome does not allow the bypass.
+
+		During testing I discovered an error with the grid when it was shrinking. The grid went from 4 to 3 to 1. 
+		I edited the CSS to add a change from 3 to 2 and 2 to 1 when the grid is shrinking.
+		
+	Microsoft Edge:
+		Checked each link, button, hover state, and clickable to ensure functionality.
+
+		When checking the media queries, I discovered and error on the home page at 1201px to 1380px the grid and blog preview overlap.
+		To fix this I introduced a new media query for 1201px and up.
+
+
+System iPhone SE:
+iOS Version 17.0.3
+
+	Safari:
+		Checked each link, button, hover state, and clickable to ensure functionality.
+	
+		Checked each media query set to ensure smooth and responsive transitioning between larger screens to smaller and back.
+
+		When checking the checkout page I discovered that safari had a different default drop down selector. This caused the State selection portion of the page to 		look out of place and the zip code section that follows to be shifted out of place.
+		Solution - N/A
+
+
+
+
+
+
+
+
+User Personas:
+
+
+
+1. Persona: Dev Enthusiast - Emily
+
+    Demographics:
+        Age: 28
+        Gender: Female
+        Location: San Francisco, CA
+
+    Occupation and Industry:
+        Job title: Senior Software Developer
+        Industry: Tech startup focused on AI applications
+
+    Income and Financial Status:
+        Annual income: $80,000
+        Financial priorities: Investing in skill development tools and tech gadgets
+
+    Education:
+        Level of education: Master's in Computer Science
+        Field of study: Artificial Intelligence
+
+    Technology Proficiency:
+        Familiarity with web technologies: Expert
+        Preferred devices and OS: MacBook Pro (M1 Pro), iPhone 13 Pro
+
+    Goals and Objectives:
+        Professional goals: Lead AI projects; contribute to open-source
+        Personal objectives: Adopt a dog for companionship
+
+    Challenges and Pain Points:
+        Challenge: Balancing work and personal life
+        Pain point: Limited time for the adoption process
+
+    Work Environment:
+        Work environment: Remote
+        Collaboration preferences: Active participant in virtual team discussions
+
+    Motivations:
+        Motivation for web development: Creating innovative, user-friendly applications
+        Key factors: Efficiency and performance in web development tools
+
+    Web Browsing Habits:
+        Favorite websites: GitHub, Stack Overflow
+        Preferred browser: Google Chrome
+
+    Communication Preferences:
+        Preferred channels: Email, Slack
+        Frequency: Regular online interactions
+
+    Technical Skill Level:
+        Proficiency: JavaScript, Python, Ruby on Rails
+        Learning preferences: Actively participates in tech meetups and conferences
+
+    Prior Experience:
+        Experience with web development: Multiple projects with a focus on user experience
+        Successes and failures: Successfully implemented responsive designs; faced challenges with complex backend integrations
+
+    History with Pets and Animals:
+        Grew up with Golden Retrievers; understands the responsibilities of pet ownership
+        Currently living in a pet-friendly apartment and actively looking to adopt a dog
+
+    Interests and Hobbies:
+        Outside of web development: Rock climbing, attending tech conferences
+        Hobbies: Experimenting with new programming languages
+
+    Feedback and Suggestions:
+        Feedback: Prefers intuitive design in web applications
+        Suggestions: Streamlined adoption process with automated notifications
+
+2. Persona: Casual Coder - Alex
+
+    Demographics:
+        Age: 35
+        Gender: Male
+        Location: Austin, TX
+
+    Occupation and Industry:
+        Job title: Marketing Coordinator at a local marketing agency
+        Industry: Marketing and Advertising
+
+    Income and Financial Status:
+        Annual income: $60,000
+        Financial priorities: Balanced spending on hobbies and tech gadgets
+
+    Education:
+        Level of education: Bachelor's in Marketing
+        Field of study: Marketing and Communications
+
+    Technology Proficiency:
+        Familiarity with web technologies: Basic
+        Preferred devices and OS: Dell Inspiron laptop, Samsung Galaxy S21
+
+    Goals and Objectives:
+        Professional goals: Advance to a managerial position in marketing
+        Personal objectives: Adopt a dog for companionship and stress relief
+
+    Challenges and Pain Points:
+        Challenge: Juggling work and personal life
+        Pain point: Limited time for complex adoption processes
+
+    Work Environment:
+        Work environment: Office-based
+        Collaboration preferences: Collaborates with team members on marketing campaigns
+
+    Motivations:
+        Motivation for web development: Enhancing marketing skills and understanding web trends
+        Key factors: User-friendly interfaces for efficient work
+
+    Web Browsing Habits:
+        Favorite websites: Reddit, Medium
+        Preferred browser: Google Chrome
+
+    Communication Preferences:
+        Preferred channels: Email, Slack, occasional team meetings
+        Frequency: Regular online interactions
+
+    Technical Skill Level:
+        Proficiency: Basic HTML, CSS; learning JavaScript
+        Learning preferences: Online tutorials, self-paced learning
+
+    Prior Experience:
+        Experience with web development: Limited, but has created simple landing pages
+        Successes and failures: Successfully executed small web projects; challenges with backend development
+
+    History with Pets and Animals:
+        Grew up with a Border Collie; understands the responsibilities of pet ownership
+        Recently moved to a pet-friendly apartment and is considering adopting a dog for companionship and stress relief.
+
+    Interests and Hobbies:
+        Outside of web development: Watching movies, playing FIFA on Xbox, occasional jogging in the neighborhood
+
+    Feedback and Suggestions:
+        Feedback: Prefers intuitive design in web applications
+        Suggestions: Streamlined adoption process with clear guidance for beginners
+
+3. Persona: Busy Tech Entrepreneur - Taylor
+
+    Demographics:
+        Age: 40
+        Gender: Non-binary
+        Location: Seattle, WA
+
+    Occupation and Industry:
+        Job title: Founder and CEO of an e-commerce platform for handmade crafts
+        Industry: E-commerce
+
+    Income and Financial Status:
+        Annual income: $120,000
+        Financial priorities: Reinvesting in the business and personal growth
+
+    Education:
+        Level of education: Bachelor's in Business Administration
+        Field of study: Entrepreneurship
+
+    Technology Proficiency:
+        Familiarity with web technologies: Advanced
+        Preferred devices and OS: Dell XPS 13, iPad Pro 12.9, Google Pixel 6
+
+    Goals and Objectives:
+        Professional goals: Expand e-commerce business globally
+        Personal objectives: Adopt a dog for companionship and stress relief
+
+    Challenges and Pain Points:
+        Challenge: Managing a growing business
+        Pain point: Limited time for complex adoption processes
+
+    Work Environment:
+        Work environment: Mostly remote, occasional business travel
+        Collaboration preferences: Efficient and result-oriented communication
+
+    Motivations:
+        Motivation for web development: Streamlining business processes
+        Key factors: Automation and efficiency in web applications
+
+    Web Browsing Habits:
+        Favorite websites: Forbes, LinkedIn
+        Preferred browser: Google Chrome
+
+    Communication Preferences:
+        Preferred channels: Email, project management tools, occasional video conferences
+        Frequency: Periodic online interactions
+
+    Technical Skill Level:
+        Proficiency: Advanced knowledge of web development, API integration
+        Learning preferences: Stays updated through industry news and conferences
+
+    Prior Experience:
+        Experience with web development: Led multiple successful projects
+        Successes and failures: Successfully implemented complex e-commerce features; faced challenges with scalability
+
+    History with Pets and Animals:
+        Grew up with Siamese cats; never had a dog
+        Interested in adopting a dog for companionship and stress relief but has limited time for complex adoption processes.
+
+    Interests and Hobbies:
+        Outside of web development: Networking at entrepreneurial events, reading business strategy books, occasional weekend getaways to unwind
+
+    Feedback and Suggestions:
+        Feedback: Prefers efficient and intuitive design in web applications
+        Suggestions: Streamlined adoption process with clear guidance for busy individuals.
+
+		

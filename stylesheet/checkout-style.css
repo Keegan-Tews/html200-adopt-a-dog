@@ -692,7 +692,7 @@ legend{
 
 
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
-
+/* Desktop screen size and start of header*/
     header{
         background-image: url(../images/header-images/header-large.jpg);
         background-size: cover;
