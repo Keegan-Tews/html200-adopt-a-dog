@@ -976,7 +976,7 @@ article.row{
 }
 
 
-@media screen and (min-width: 1201px) {
+@media screen and (min-width: 1201px) and (max-width: 1400px){
 
     header{
         background-image: url(../images/header-images/header-large.jpg);

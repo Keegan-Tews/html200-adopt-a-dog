@@ -13,7 +13,8 @@ Operating system - Windows 11:
 		Large mobile screen size: 481px min - 768px max
 		Tablet screen size: 769px min - 1024px max
 		Desktop screen size: 1025px min - 1200px max
-		Desktop Large screen size: 1201px min - 100% max - Added.
+		Desktop Large screen size: 1201px min - 1400px - Added
+		Extra large screen size: 1401px min - 100% max - Added
 
 	Firefox: 
 		Checked each link, button, hover state, and clickable to ensure functionality.
